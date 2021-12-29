@@ -67,7 +67,7 @@ textarea {
 }
 .error {
   color: red;
-  background: pink;
+  background: #ffc0cb;
   border: 1px solid red;
   border-radius: 4px;
   padding: 8px;
