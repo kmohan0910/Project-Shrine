@@ -1,14 +1,15 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
+import 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC9EgdJ3pZbAiyAW9sfVG01IT3xOZCA9A4",
-  authDomain: "theshrinehub.firebaseapp.com",
-  projectId: "theshrinehub",
-  storageBucket: "theshrinehub.appspot.com",
-  messagingSenderId: "791781842467",
-  appId: "1:791781842467:web:8fb8b952f600db2f035b96"
+  apiKey: "AIzaSyA1Vl-sszg4h1IO4fJsxEgls3pwSLF0Qoc",
+  authDomain: "shrinehub.firebaseapp.com",
+  projectId: "shrinehub",
+  storageBucket: "shrinehub.appspot.com",
+  messagingSenderId: "803848453244",
+  appId: "1:803848453244:web:9cce39dd5ed3454fa5ddf9"
 };
 
 // init firebase
@@ -17,8 +18,9 @@ firebase.initializeApp(firebaseConfig)
 // init services
 const projectFirestore = firebase.firestore()
 const projectAuth = firebase.auth()
+const projectStorage = firebase.storage()
 
 // timestamp
 const timestamp = firebase.firestore.Timestamp
 
-export { projectFirestore, projectAuth, timestamp }
+export { projectFirestore, projectAuth, timestamp, projectStorage }
